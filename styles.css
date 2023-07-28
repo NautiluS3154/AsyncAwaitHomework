@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.users-container,
+.posts-container,
+.comments-container {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.users-container:hover,
+.posts-container:hover,
+.comments-container:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.user,
+.post,
+.comment {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user:hover,
+.post:hover,
+.comment:hover {
+  background-color: #f5f5f5;
+}
+
+.post-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.comment-body {
+  font-style: italic;
+}
